@@ -1,8 +1,8 @@
-package com.ervin.kiwariandroidtest;
+package com.ervin.kiwariandroidtest.helpers;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
+import androidx.preference.PreferenceManager;
 
 public class Preferences {
     private static SharedPreferences getInstance(Context context) {

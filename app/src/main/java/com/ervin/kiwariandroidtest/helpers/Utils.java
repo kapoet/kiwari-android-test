@@ -1,4 +1,4 @@
-package com.ervin.kiwariandroidtest;
+package com.ervin.kiwariandroidtest.helpers;
 
 import java.text.DateFormat;
 import java.util.Date;

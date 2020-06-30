@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.ervin.kiwariandroidtest.R;
-import com.ervin.kiwariandroidtest.model.User;
+import com.ervin.kiwariandroidtest.data.model.User;
 
 import java.util.List;
 

@@ -1,7 +1,8 @@
-package com.ervin.kiwariandroidtest.model;
+package com.ervin.kiwariandroidtest.data.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 
 public class User implements Parcelable {
     private String name, email, imgURL, uid;
@@ -47,6 +48,7 @@ public class User implements Parcelable {
     public void setImgURL(String imgURL) {
         this.imgURL = imgURL;
     }
+
 
     @Override
     public int describeContents() {

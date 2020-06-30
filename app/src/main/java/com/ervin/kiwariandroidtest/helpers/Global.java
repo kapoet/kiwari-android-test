@@ -1,4 +1,4 @@
-package com.ervin.kiwariandroidtest;
+package com.ervin.kiwariandroidtest.helpers;
 
 public class Global {
     public static final String ACCOUNT = "Account";

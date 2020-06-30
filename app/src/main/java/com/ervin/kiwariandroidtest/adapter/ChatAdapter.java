@@ -11,18 +11,19 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.ervin.kiwariandroidtest.model.Chat;
+import com.ervin.kiwariandroidtest.data.local.entity.ChatEntity;
+import com.ervin.kiwariandroidtest.data.model.Chat;
 import com.ervin.kiwariandroidtest.R;
-import com.ervin.kiwariandroidtest.Utils;
+import com.ervin.kiwariandroidtest.helpers.Utils;
 
 import java.util.List;
 
 public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
 
-    List<Chat> chats;
+    List<ChatEntity> chats;
     Activity activity;
 
-    public ChatAdapter(List<Chat> chats, Activity activity) {
+    public ChatAdapter(List<ChatEntity> chats, Activity activity) {
         this.chats = chats;
         this.activity = activity;
     }
@@ -36,7 +37,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Chat chat = chats.get(position);
+        ChatEntity chat = chats.get(position);
         holder.txtTimestamp.setText(Utils.dateFormat(chat.getTimestamp()));
         holder.txtMessage.setText(chat.getMessage());
         holder.txtName.setText(chat.getSenderName());

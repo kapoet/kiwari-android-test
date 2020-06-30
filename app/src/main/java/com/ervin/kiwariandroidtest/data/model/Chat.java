@@ -1,10 +1,15 @@
-package com.ervin.kiwariandroidtest.model;
+package com.ervin.kiwariandroidtest.data.model;
+
+import androidx.annotation.Nullable;
+
+import java.util.ArrayList;
 
 public class Chat {
     private String senderId,
             senderName,
             senderImage,
-            message;
+            message,
+            chatID;
     private long timestamp;
 
     public Chat() {
@@ -16,6 +21,14 @@ public class Chat {
         this.senderImage = senderImage;
         this.message = message;
         this.timestamp = timestamp;
+    }
+
+    public String getChatID() {
+        return chatID;
+    }
+
+    public void setChatID(String chatID) {
+        this.chatID = chatID;
     }
 
     public String getSenderId() {
